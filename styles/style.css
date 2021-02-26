@@ -8,15 +8,16 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-
+/*Начало стилей хедер*/
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   /* выше установили ограничения для секции */
-  /*задаю относительное позиционирование для heder, что бы расположить внутри него дочерние элементы*/
+  /*задаю относительное позиционирование для heder что бы расположить внутри него элементы*/
   position: relative;
   background-color:  #f2f2f2;
+  /*Дисплей флекс задал для заголовка .header__title что бы выровнить его по центру вертикальной оси*/
   display: flex;
 }
 
@@ -30,13 +31,13 @@ width: 183px;
   top: 30px;
   left: 64px;
 }
-
+/*Ниже в стиле описываю расположение блока с элементом заголовок(h1)*/
 .header__title{
   margin-left: 64px;
   width: 730px;
   align-self: center;
 }
-
+/*Стили для элемента h1 в блоке .header__title*/
 .header__title_size{
   font-weight: bold;
   font-size: 102px;
@@ -74,7 +75,8 @@ width: 183px;
   height: 608px;
 }
 
-.square-pic{
+/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
+.header__square-pic {
   background-color:#2f80ed;
   width: 568px;
   height: 568px;
@@ -82,12 +84,7 @@ width: 183px;
   bottom: 64px;
   right: 0;
 }
-
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
-  height: 568px;
-  width: 568px;
-}
+/*Конец стилей header*/
 
 .content {
 }
@@ -167,6 +164,8 @@ width: 183px;
   width: 1100px;
   margin: 0 auto;
   justify-content: space-between;
+}
+.table_columns{
   grid-template-columns: 250px 250px 250px 250px;
 }
 .table__cell {
@@ -245,7 +244,59 @@ width: 183px;
   bottom: 0;
   z-index: 0;
 }
+/*Начало стилей для блока .kaufman*/
+.kaufman {
+  background-color: #000;
+  padding: 90px 0;
+  border: 1px solid red;
+  position: relative;
+  overflow: hidden;
+}
+/* Ранее в коде уже прописывались стили для заголовков и подзаголовков
+.section-title {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+.section-title__text{
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 0;
+}
+.section-subtitle {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.section-subtitle__text{
+  line-height: 34px;
+  font-size: 24px;
+  margin: 0;
+  font-weight: normal;
+}*/
+.kaufman-title_theme_dark {
+  color: white;
+}
 
+.kaufman-subtitle_theme_dark {
+  color: white;
+}
+/* ранее в коде был прописан стиль для таблицы с использованием грид
+.table {
+  display: grid;
+  width: 1100px;
+  margin: 0 auto;
+  justify-content: space-between;
+}*/
+.table_theme_dark {
+  grid-template-columns: 200px 200px 200px 200px 200px;
+  position: relative;
+  z-index: 1;
+  }
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
   width: 200px;
@@ -253,3 +304,19 @@ width: 183px;
   margin-right: 0;
   margin-top: 80px;
 }
+/* Ниже будут указаны */
+.table__heading_theme_dark {
+}
+.table__text_theme_dark {
+}
+.kaufman__triangle {
+  position: absolute;
+  top: 0;
+  right: -210px;
+  z-index: 0;
+}
+.kaufman__triangle_size{
+  height: 877px;
+  width: 877px;
+}
+/*Конец стией для блока .kaufman*/
