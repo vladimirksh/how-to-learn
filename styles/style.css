@@ -248,7 +248,6 @@ width: 183px;
 .kaufman {
   background-color: #000;
   padding: 90px 0;
-  border: 1px solid red;
   position: relative;
   overflow: hidden;
 }
@@ -292,6 +291,7 @@ width: 183px;
   margin: 0 auto;
   justify-content: space-between;
 }*/
+/*всей сетке грид указал позиционирование и з индекс что бы треуголник ушел на 2 план*/
 .table_theme_dark {
   grid-template-columns: 200px 200px 200px 200px 200px;
   position: relative;
@@ -304,11 +304,11 @@ width: 183px;
   margin-right: 0;
   margin-top: 80px;
 }
-/* Ниже будут указаны */
+/* Эти модификаторы без надобности пока что
 .table__heading_theme_dark {
 }
 .table__text_theme_dark {
-}
+}*/
 .kaufman__triangle {
   position: absolute;
   top: 0;
@@ -320,3 +320,75 @@ width: 183px;
   width: 877px;
 }
 /*Конец стией для блока .kaufman*/
+
+/*Начало стилей для footer*/
+.footer {
+  border: 1px solid blue;
+  min-height: 350px;
+  padding: 60px 0 40px;
+  box-sizing: border-box;
+  background-color: #000;
+}
+.footer__columns {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  height: 250px;
+  margin: auto;
+}
+.footer__column_content_copyright {
+  border: 1px solid green;
+  flex-basis: 711px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo__place_footer {
+
+}
+.footer__author {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+}
+
+.footer__column_content_info {
+  border: 1px solid green;
+}
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.footer__column-text{
+  margin: 0 0 20px;
+}
+.footer__column-links {
+}
+.footer__list{
+  list-style-type: none;
+  padding: 0;
+}
+.footer__point{
+}
+.footer__column_link {
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+}
+
+.footer__column_content_social {
+  border: 1px solid green;
+}
+.footer__social-icon {
+  height: 16px;
+  width: 16px;
+  margin-right: 10px;
+}
+/*Конец стилей для footer*/
