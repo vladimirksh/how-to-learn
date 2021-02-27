@@ -8,7 +8,7 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-/*Начало стилей хедер*/
+/*Начало стилей 1 блока макета*/
 .header {
   height: 100vh;
   min-height: 600px;
@@ -50,7 +50,6 @@ width: 183px;
   left: 64px;
   width: 388px;
 }
-
 .header__text {
   line-height: 25px;
   font-size: 18px;
@@ -84,8 +83,8 @@ width: 183px;
   bottom: 64px;
   right: 0;
 }
-/*Конец стилей header*/
-
+/*Конец стилей 1 блока макета*/
+/*Начало стилей 2 блока макета*/
 .content {
 }
 
@@ -129,7 +128,8 @@ width: 183px;
 .two-columns__span-accent{
   font-weight: bold;
 }
-
+/*Конец стилей 2 блока макета*/
+/*Начало стилей 3 блока макета с применением сетки грид*/
 .digits {
   padding: 100px 0;
 }
@@ -158,13 +158,17 @@ width: 183px;
   margin: 0;
   font-weight: normal;
 }
-
+/*стили для грида*/
 .table {
   display: grid;
   width: 1100px;
   margin: 0 auto;
   justify-content: space-between;
 }
+/*Так как на макете указано 4 столбца и все они по 250пх прописываем это свойство для грида
+это свойсто отвечает за ширину.
+Свойство grid-template-rows: ; которое отвечает за высоту прописывать не вижу смысла, так как в макете
+не были прописаны размеры*/
 .table_columns{
   grid-template-columns: 250px 250px 250px 250px;
 }
@@ -187,20 +191,24 @@ width: 183px;
   line-height: 1.2;
   font-size: 18px;
 }
-
+/*Конец стилей 3 блока макета с применением сетки грид*/
+/*Начало стилей 4 блока макета*/
+/*Добавил внутренний отступ как на макете, но высота всего блок стала 890пх если добавить
+всему блоку(.feynman) свойство box-sizing: border-box; то проблема с высотой всего блока 790пх будет решена
+но тогда съедут вниз все элементы и будет различие между макетом и сайтом, по этому и решил не применять
+свойство box-sizing: border-box; дабы придерживатья макета.*/
 .feynman {
   background-color: #f2f2f2;
   height: 790px;
   position: relative;
   padding: 100px 0 0;
 }
+/*z ind*/
 .feynman__title {
   padding: 0;
   margin: auto;
   width: 648px;
-  position: absolute;
-  top: 100px;
-  left: 476px;
+  position: relative;
   z-index: 1;
 }
 .feynman__title_text {
@@ -212,10 +220,8 @@ width: 183px;
 }
 .feynman__subtitle {
   margin: auto;
-  width: 648px;
-  position: absolute;
-  top: 50%;
-  left: 476px;
+  margin-top: 70px;
+  position: relative;
   z-index: 1;
 }
 .feynman__subtitle_text {
@@ -237,6 +243,7 @@ width: 183px;
   font-size: 36px;
   font-weight: normal;
 }
+/*Так как картинка */
 .feynman__image {
   height: 637px;
   width: 867px;
@@ -244,39 +251,15 @@ width: 183px;
   bottom: 0;
   z-index: 0;
 }
-/*Начало стилей для блока .kaufman*/
+/*Конец стилей 4 блока макета*/
+/*Начало стилей 5 блока макета*/
 .kaufman {
   background-color: #000;
   padding: 90px 0;
   position: relative;
   overflow: hidden;
 }
-/* Ранее в коде уже прописывались стили для заголовков и подзаголовков
-.section-title {
-  width: 60%;
-  margin: auto;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-}
-.section-title__text{
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
-  margin: 0;
-}
-.section-subtitle {
-  width: 60%;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-}
-.section-subtitle__text{
-  line-height: 34px;
-  font-size: 24px;
-  margin: 0;
-  font-weight: normal;
-}*/
+/* Ранее в коде уже прописывались стили для заголовков и подзаголовков*/
 .kaufman-title_theme_dark {
   color: white;
 }
@@ -284,14 +267,9 @@ width: 183px;
 .kaufman-subtitle_theme_dark {
   color: white;
 }
-/* ранее в коде был прописан стиль для таблицы с использованием грид
-.table {
-  display: grid;
-  width: 1100px;
-  margin: 0 auto;
-  justify-content: space-between;
-}*/
-/*всей сетке грид указал позиционирование и з индекс что бы треуголник ушел на 2 план*/
+/* ранее в коде был прописан стиль для таблицы с использованием грид сетки
+.table*/
+/*всей сетке грид указал позиционирование и z индекс что бы треуголник ушел на 2 план*/
 .table_theme_dark {
   grid-template-columns: 200px 200px 200px 200px 200px;
   position: relative;
@@ -319,26 +297,32 @@ width: 183px;
   height: 877px;
   width: 877px;
 }
-/*Конец стией для блока .kaufman*/
-
-/*Начало стилей для footer*/
+/*Конец стилей 5 блока макета*/
+/*Начало стилей 6 блока макета*/
+/*добавляю внутренние отступы в footer что бы общая высота блока была 350px
+так же добавил свойство box-sizing: border-box; в отличии от 4 блока где этого свойства нет*/
 .footer {
-  border: 1px solid blue;
   min-height: 350px;
   padding: 60px 0 40px;
   box-sizing: border-box;
   background-color: #000;
+  color: white;
 }
+/*делаю footer__columns flex блоком что бы расположить элементы
+при помощи управления положением(justify-content: space-between;)
+, высоту блоку прописал 250пх без нее блок становится меньше*/
 .footer__columns {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   width: 90%;
   height: 250px;
   margin: auto;
 }
+/* блоку копирайта задаю свойства флекс блока, что бы расположить элементы сверху и снизу у границ блока
+, но перед тем как задавать расположение элементов
+надо прописать направление внутри контейнера
+ в данном случае это колоннки(flex-direction: column;)*/
 .footer__column_content_copyright {
-  border: 1px solid green;
   flex-basis: 711px;
   display: flex;
   flex-direction: column;
@@ -352,17 +336,14 @@ width: 183px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  color: white;
 }
 
 .footer__column_content_info {
-  border: 1px solid green;
 }
 .footer__column-heading {
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
-  color: white;
 }
 .footer__column-text{
   margin: 0 0 20px;
@@ -373,8 +354,6 @@ width: 183px;
   list-style-type: none;
   padding: 0;
 }
-.footer__point{
-}
 .footer__column_link {
   text-decoration: none;
   line-height: 30px;
@@ -384,11 +363,10 @@ width: 183px;
 }
 
 .footer__column_content_social {
-  border: 1px solid green;
 }
 .footer__social-icon {
   height: 16px;
   width: 16px;
   margin-right: 10px;
 }
-/*Конец стилей для footer*/
+/*Конец*/
