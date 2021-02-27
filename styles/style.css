@@ -8,7 +8,8 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-/*Начало стилей 1 блока макета*/
+/*header
+Начало стилей 1 блока макета*/
 .header {
   height: 100vh;
   min-height: 600px;
@@ -21,24 +22,24 @@
   display: flex;
 }
 
-.logo{
+.logo {
 height: 32px;
 width: 183px;
 }
 
-.logo__place_header{
+.logo__place_header {
   position: absolute;
   top: 30px;
   left: 64px;
 }
 /*Ниже в стиле описываю расположение блока с элементом заголовок(h1)*/
-.header__title{
+.header__title {
   margin-left: 64px;
   width: 730px;
   align-self: center;
 }
 /*Стили для элемента h1 в блоке .header__title*/
-.header__title_size{
+.header__title_size {
   font-weight: bold;
   font-size: 102px;
   line-height: 96px;
@@ -50,6 +51,7 @@ width: 183px;
   left: 64px;
   width: 388px;
 }
+
 .header__text {
   line-height: 25px;
   font-size: 18px;
@@ -69,7 +71,7 @@ width: 183px;
 }
 
 /*Добавлен модитификатор для размера картинки*/
-.header__main-illustration_size{
+.header__main-illustration_size {
   width: 765px;
   height: 608px;
 }
@@ -84,7 +86,8 @@ width: 183px;
   right: 0;
 }
 /*Конец стилей 1 блока макета*/
-/*Начало стилей 2 блока макета*/
+/*conten
+Начало стилей 2 блока макета*/
 .content {
 }
 
@@ -104,7 +107,7 @@ width: 183px;
   width: 175px;
 }
 
-.two-columns__bried_text{
+.two-columns__bried_text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
@@ -125,14 +128,16 @@ width: 183px;
   font-weight: normal;
 }
 
-.two-columns__span-accent{
+.two-columns__span-accent {
   font-weight: bold;
 }
 /*Конец стилей 2 блока макета*/
-/*Начало стилей 3 блока макета с применением сетки грид*/
+/*digits
+Начало стилей 3 блока макета с применением сетки грид*/
 .digits {
   padding: 100px 0;
 }
+
 .section-title {
   width: 60%;
   margin: auto;
@@ -140,19 +145,22 @@ width: 183px;
   display: flex;
   justify-content: center;
 }
-.section-title__text{
+
+.section-title__text {
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
   margin: 0;
 }
+
 .section-subtitle {
   width: 60%;
   margin: auto;
   display: flex;
   justify-content: center;
 }
-.section-subtitle__text{
+
+.section-subtitle__text {
   line-height: 34px;
   font-size: 24px;
   margin: 0;
@@ -169,30 +177,35 @@ width: 183px;
 это свойсто отвечает за ширину.
 Свойство grid-template-rows: ; которое отвечает за высоту прописывать не вижу смысла, так как в макете
 не были прописаны размеры*/
-.table_columns{
+.table_columns {
   grid-template-columns: 250px 250px 250px 250px;
 }
+
 .table__cell {
   margin-top: 60px;
 }
-.teble__heading{
+
+.teble__heading {
   margin: 0 0 20px;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
 }
-.table__text{
+
+.table__text {
   margin: 0 0 20px;
   line-height: 1.2;
   font-size: 18px;
 }
-.table__text-sub{
+
+.table__text-sub {
   margin: 0;
   line-height: 1.2;
   font-size: 18px;
 }
 /*Конец стилей 3 блока макета с применением сетки грид*/
-/*Начало стилей 4 блока макета*/
+/*feynman
+Начало стилей 4 блока макета*/
 /*Добавил внутренний отступ как на макете, но высота всего блок стала 890пх если добавить
 всему блоку(.feynman) свойство box-sizing: border-box; то проблема с высотой всего блока 790пх будет решена
 но тогда съедут вниз все элементы и будет различие между макетом и сайтом, по этому и решил не применять
@@ -203,7 +216,7 @@ width: 183px;
   position: relative;
   padding: 100px 0 0;
 }
-/*z ind*/
+
 .feynman__title {
   padding: 0;
   margin: auto;
@@ -211,6 +224,7 @@ width: 183px;
   position: relative;
   z-index: 1;
 }
+
 .feynman__title_text {
   margin: 0;
   text-align: center;
@@ -218,12 +232,14 @@ width: 183px;
   font-size: 120px;
   font-weight: bold;
 }
+
 .feynman__subtitle {
   margin: auto;
   margin-top: 70px;
   position: relative;
   z-index: 1;
 }
+
 .feynman__subtitle_text {
   margin: 0;
   text-align: center;
@@ -231,11 +247,13 @@ width: 183px;
   font-size: 36px;
   font-weight: normal;
 }
+
 .feynman__link {
   position: absolute;
   top: 50%;
   right: 48px;
 }
+
 .feynman__link_text {
   text-decoration: none;
   color: #2f80ed;
@@ -243,7 +261,7 @@ width: 183px;
   font-size: 36px;
   font-weight: normal;
 }
-/*Так как картинка */
+
 .feynman__image {
   height: 637px;
   width: 867px;
@@ -252,7 +270,8 @@ width: 183px;
   z-index: 0;
 }
 /*Конец стилей 4 блока макета*/
-/*Начало стилей 5 блока макета*/
+/*kaufman
+Начало стилей 5 блока макета*/
 .kaufman {
   background-color: #000;
   padding: 90px 0;
@@ -293,12 +312,14 @@ width: 183px;
   right: -210px;
   z-index: 0;
 }
-.kaufman__triangle_size{
+
+.kaufman__triangle_size {
   height: 877px;
   width: 877px;
 }
 /*Конец стилей 5 блока макета*/
-/*Начало стилей 6 блока макета*/
+/*footer
+Начало стилей 6 блока макета*/
 /*добавляю внутренние отступы в footer что бы общая высота блока была 350px
 так же добавил свойство box-sizing: border-box; в отличии от 4 блока где этого свойства нет*/
 .footer {
@@ -339,21 +360,27 @@ width: 183px;
 }
 
 .footer__column_content_info {
+
 }
 .footer__column-heading {
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
 }
-.footer__column-text{
+
+.footer__column-text {
   margin: 0 0 20px;
 }
+
 .footer__column-links {
+
 }
-.footer__list{
+
+.footer__list {
   list-style-type: none;
   padding: 0;
 }
+
 .footer__column_link {
   text-decoration: none;
   line-height: 30px;
@@ -363,7 +390,9 @@ width: 183px;
 }
 
 .footer__column_content_social {
+
 }
+
 .footer__social-icon {
   height: 16px;
   width: 16px;
