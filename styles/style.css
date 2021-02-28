@@ -23,8 +23,9 @@
 }
 
 .logo {
-height: 32px;
-width: 183px;
+  background-image: url("../images/logo_place_header.svg");
+  height: 32px;
+  width: 183px;
 }
 
 .logo__place_header {
@@ -32,30 +33,28 @@ width: 183px;
   top: 30px;
   left: 64px;
 }
-/*Ниже в стиле описываю расположение блока с элементом заголовок(h1)*/
+/*Ниже в стиле описываю расположение блока заголовка(h1)*/
 .header__title {
+  margin: 0;
   margin-left: 64px;
-  width: 730px;
+  max-width: 730px;
   align-self: center;
-}
-/*Стили для элемента h1 в блоке .header__title*/
-.header__title_size {
   font-weight: bold;
   font-size: 102px;
   line-height: 96px;
+  z-index: 2;
 }
 
 .header__subtitle {
   position: absolute;
   bottom: 30px;
   left: 64px;
-  width: 388px;
-}
-
-.header__text {
+  max-width: 388px;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  z-index: 2;
+  margin: 0;
 }
 
 .header__link {
@@ -68,10 +67,6 @@ width: 183px;
   right: 0;
   bottom: 0;
   z-index: 1;
-}
-
-/*Добавлен модитификатор для размера картинки*/
-.header__main-illustration_size {
   width: 765px;
   height: 608px;
 }
@@ -103,17 +98,14 @@ width: 183px;
   margin: 0 auto;
 }
 
-.two-columns__bried {
-  width: 175px;
-}
-
-.two-columns__bried_text {
+.two-columns__brief {
+  max-width: 175px;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   color: #2f80ed;
   align-self: flex-start;
-  margin-top: 0;
+  margin: 0;
 }
 
 .two-columns__main-text {
@@ -121,11 +113,15 @@ width: 183px;
   min-width: 784px;
 }
 
+.two-columns__main-text :nth-child(n){
+  margin-bottom: 30px;
+}
+
 .two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
-  margin: 0 0 30px;
   font-weight: normal;
+  margin: 0;
 }
 
 .two-columns__span-accent {
@@ -140,30 +136,24 @@ width: 183px;
 
 .section-title {
   width: 60%;
+  margin: 0;
   margin: auto;
   margin-bottom: 20px;
   display: flex;
   justify-content: center;
-}
-
-.section-title__text {
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
-  margin: 0;
 }
 
 .section-subtitle {
   width: 60%;
+  margin: 0;
   margin: auto;
   display: flex;
   justify-content: center;
-}
-
-.section-subtitle__text {
   line-height: 34px;
   font-size: 24px;
-  margin: 0;
   font-weight: normal;
 }
 /*стили для грида*/
@@ -172,17 +162,13 @@ width: 183px;
   width: 1100px;
   margin: 0 auto;
   justify-content: space-between;
-}
-/*Так как на макете указано 4 столбца и все они по 250пх прописываем это свойство для грида
-это свойсто отвечает за ширину.
-Свойство grid-template-rows: ; которое отвечает за высоту прописывать не вижу смысла, так как в макете
-не были прописаны размеры*/
-.table_columns {
   grid-template-columns: 250px 250px 250px 250px;
+  padding: 0;
 }
 
 .table__cell {
   margin-top: 60px;
+  list-style-type: none;
 }
 
 .teble__heading {
@@ -212,21 +198,18 @@ width: 183px;
 свойство box-sizing: border-box; дабы придерживатья макета.*/
 .feynman {
   background-color: #f2f2f2;
-  height: 790px;
+  min-height: 790px;
   position: relative;
   padding: 100px 0 0;
 }
 
 .feynman__title {
   padding: 0;
+  margin: 0;
   margin: auto;
   width: 648px;
   position: relative;
   z-index: 1;
-}
-
-.feynman__title_text {
-  margin: 0;
   text-align: center;
   line-height: 1.15;
   font-size: 120px;
@@ -234,14 +217,11 @@ width: 183px;
 }
 
 .feynman__subtitle {
+  margin: 0;
   margin: auto;
   margin-top: 70px;
   position: relative;
   z-index: 1;
-}
-
-.feynman__subtitle_text {
-  margin: 0;
   text-align: center;
   line-height: 51px;
   font-size: 36px;
@@ -252,9 +232,6 @@ width: 183px;
   position: absolute;
   top: 50%;
   right: 48px;
-}
-
-.feynman__link_text {
   text-decoration: none;
   color: #2f80ed;
   line-height: 51px;
@@ -273,18 +250,22 @@ width: 183px;
 /*kaufman
 Начало стилей 5 блока макета*/
 .kaufman {
-  background-color: #000;
+  background-color: #000000;
   padding: 90px 0;
   position: relative;
   overflow: hidden;
 }
 /* Ранее в коде уже прописывались стили для заголовков и подзаголовков*/
-.kaufman-title_theme_dark {
+.section-title_theme_dark {
   color: white;
+  z-index: 1;
+  position: relative;
 }
 
-.kaufman-subtitle_theme_dark {
+.section-subtitle_theme_dark {
   color: white;
+  z-index: 1;
+  position: relative;
 }
 /* ранее в коде был прописан стиль для таблицы с использованием грид сетки
 .table*/
@@ -301,21 +282,24 @@ width: 183px;
   margin-right: 0;
   margin-top: 80px;
 }
-/* Эти модификаторы без надобности пока что
+
 .table__heading_theme_dark {
+  color: white;
 }
 .table__text_theme_dark {
-}*/
+  color: white;
+}
 .kaufman__triangle {
+  background-image: url("../images/kaufman-triangle.svg");
+  background-position: center;
+  background-size: 877px 877px;
+  background-repeat: no-repeat;
+  height: 877px;
+  width: 877px;
   position: absolute;
   top: 0;
   right: -210px;
   z-index: 0;
-}
-
-.kaufman__triangle_size {
-  height: 877px;
-  width: 877px;
 }
 /*Конец стилей 5 блока макета*/
 /*footer
@@ -323,6 +307,7 @@ width: 183px;
 /*добавляю внутренние отступы в footer что бы общая высота блока была 350px
 так же добавил свойство box-sizing: border-box; в отличии от 4 блока где этого свойства нет*/
 .footer {
+  display: flex;
   min-height: 350px;
   padding: 60px 0 40px;
   box-sizing: border-box;
@@ -336,8 +321,12 @@ width: 183px;
   display: flex;
   justify-content: space-between;
   width: 90%;
-  height: 250px;
-  margin: auto;
+  margin: 0 auto;
+}
+
+.footer__column{
+  flex-direction: column;
+  justify-content: space-between;
 }
 /* блоку копирайта задаю свойства флекс блока, что бы расположить элементы сверху и снизу у границ блока
 , но перед тем как задавать расположение элементов
@@ -346,11 +335,12 @@ width: 183px;
 .footer__column_content_copyright {
   flex-basis: 711px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .logo__place_footer {
+  background-image: url("../images/logo_place_footer.svg");
+  height: 32px;
+  width: 183px;
 
 }
 .footer__author {
@@ -366,9 +356,6 @@ width: 183px;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
-}
-
-.footer__column-text {
   margin: 0 0 20px;
 }
 
@@ -381,7 +368,7 @@ width: 183px;
   padding: 0;
 }
 
-.footer__column_link {
+.footer__column-link {
   text-decoration: none;
   line-height: 30px;
   font-size: 18px;
