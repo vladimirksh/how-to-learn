@@ -28,7 +28,7 @@
   width: 183px;
 }
 
-.logo__place_header {
+.logo_place_header {
   position: absolute;
   top: 30px;
   left: 64px;
@@ -87,7 +87,7 @@
 }
 
 .description {
-  padding: 100px 0;
+  padding: 100px 0 0 0;
   align-items: flex-start;
 }
 
@@ -113,8 +113,8 @@
   min-width: 784px;
 }
 
-.two-columns__main-text :nth-child(n){
-  margin-bottom: 30px;
+.two-columns__main-text :nth-last-child(1){
+  margin: 0;
 }
 
 .two-columns__paragraph {
@@ -122,6 +122,7 @@
   font-size: 24px;
   font-weight: normal;
   margin: 0;
+  margin-bottom: 30px;
 }
 
 .two-columns__span-accent {
@@ -170,6 +171,10 @@
   margin-top: 60px;
   list-style-type: none;
 }
+/*Добавил псевдо класс так как у последнего параграфа в макете явно отсутствуют отступы*/
+.table__cell :nth-last-child(1) {
+  margin: 0;
+}
 
 .teble__heading {
   margin: 0 0 20px;
@@ -180,12 +185,6 @@
 
 .table__text {
   margin: 0 0 20px;
-  line-height: 1.2;
-  font-size: 18px;
-}
-
-.table__text-sub {
-  margin: 0;
   line-height: 1.2;
   font-size: 18px;
 }
@@ -249,7 +248,7 @@
 /*kaufman
 Начало стилей 5 блока макета*/
 .kaufman {
-  background-color: #000000;
+  background-color: #1f1f1f;
   padding: 90px 0;
   position: relative;
   overflow: hidden;
@@ -310,7 +309,7 @@
   min-height: 350px;
   padding: 60px 0 40px;
   box-sizing: border-box;
-  background-color: #000;
+  background-color: #1f1f1f;
   color: white;
 }
 /*делаю footer__columns flex блоком что бы расположить элементы
@@ -336,7 +335,7 @@
   display: flex;
 }
 
-.logo__place_footer {
+.logo_place_footer {
   background-image: url("../images/logo_place_footer.svg");
   height: 32px;
   width: 183px;
