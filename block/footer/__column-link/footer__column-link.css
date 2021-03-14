@@ -5,3 +5,11 @@
   font-weight: normal;
   color: white;
 }
+
+.footer__column-link:hover {
+  opacity: 0.5;
+  -webkit-transition: 1s ease;
+  -moz-transition: 1s ease;
+  -o-transition: 1s ease;
+  transition: 1s ease;
+}

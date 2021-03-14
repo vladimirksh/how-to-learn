@@ -10,5 +10,6 @@
   background-color:  #f2f2f2;
   /*Дисплей флекс задал для заголовка .header__title что бы выровнить его по центру вертикальной оси*/
   display: flex;
-  border: 1px solid blueviolet;
+  /*прописываем  (overflow: hidden) для квадрата*/
+  overflow: hidden;
 }

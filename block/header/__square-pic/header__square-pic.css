@@ -1,3 +1,5 @@
+@import url(../../rotation/rotation.css);
+
 .header__square-pic {
   background-color:#2f80ed;
   width: 568px;
@@ -5,4 +7,5 @@
   position: absolute;
   bottom: 64px;
   right: 0;
+  animation: rotation 20s linear infinite;
 }

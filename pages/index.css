@@ -18,12 +18,39 @@
 
 /*Стили для discription*/
 @import url(../block/content/description/description.css);
-@import url(../block/content/description/two-columns/two-columns.css);
-@import url(../block/content/description/two-columns/__brief/two-columns__brief.css);
-@import url(../block/content/description/two-columns/__main-text/two-columns__main-text.css);
-@import url(../block/content/description/two-columns/__paragraph/two-columns__paragraph.css);
-@import url(../block/content/description/two-columns/__span-accent/two-columns__span-accent.css);
+@import url(../block/two-columns/two-columns.css);
+@import url(../block/two-columns/__brief/two-columns__brief.css);
+@import url(../block/two-columns/__main-text/two-columns__main-text.css);
+@import url(../block/two-columns/__paragraph/two-columns__paragraph.css);
+@import url(../block/two-columns/__span-accent/two-columns__span-accent.css);
 /*Стили для discription*/
+
+/*Стили для techniques*/
+@import url(../block/content/techniques/techniques.css);
+@import url(../block/cards/cards.css);
+@import url(../block/cards/__item/cards__item.css);
+@import url(../block/cards/__image/cards__image.css);
+@import url(../block/cards/__title/cards__title.css);
+@import url(../block/cards/__discription/cards__discription.css);
+/*Стили для techniques*/
+
+/*Стили для video*/
+@import url(../block/content/video/video.css);
+@import url(../block/content/video/__iframes/video__iframes.css);
+@import url(../block/content/video/__iframe/video__iframe.css);
+/*Стили для video*/
+
+/*Стили для oakley*/
+@import url(../block/content/oakley/oakley.css);
+/*Стили для oakley*/
+
+/*Стили для feynman*/
+@import url(../block/content/feynman/feynman.css);
+@import url(../block/content/feynman/__title/feynman__title.css);
+@import url(../block/content/feynman/__subtitle/feynman__subtitle.css);
+@import url(../block/content/feynman/__link/feynman__link.css);
+@import url(../block/content/feynman/__image/feynman__image.css);
+/*Стили для feynman*/
 
 /*Стили для digits*/
 @import url(../block/content/digits/digits.css);
@@ -35,13 +62,9 @@
 @import url(../block/table/__text/table__text.css);
 /*Стили для digits*/
 
-/*Стили для feynman*/
-@import url(../block/content/feynman/feynman.css);
-@import url(../block/content/feynman/__title/feynman__title.css);
-@import url(../block/content/feynman/__subtitle/feynman__subtitle.css);
-@import url(../block/content/feynman/__link/feynman__link.css);
-@import url(../block/content/feynman/__image/feynman__image.css);
-/*Стили для feynman*/
+/*Стили для khan*/
+@import url(../block/content/khan/khan.css);
+/*Стили для khan*/
 
 /*Стили для kaufman*/
 @import url(../block/content/kaufman/kaufman.css);
