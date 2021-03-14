@@ -1,0 +1,12 @@
+/*это отдельный блок так как его будем использовать еще не раз*/
+.section-title {
+  width: 60%;
+  margin: 0;
+  margin: auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}

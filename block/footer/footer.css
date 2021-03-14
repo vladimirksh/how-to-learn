@@ -1,0 +1,11 @@
+/*добавляю внутренние отступы в footer что бы общая высота блока была 350px
+так же добавил свойство box-sizing: border-box; в отличии от 4 блока где этого свойства нет*/
+.footer {
+  display: flex;
+  min-height: 350px;
+  padding: 60px 0 40px;
+  box-sizing: border-box;
+  background-color: #1f1f1f;
+  color: white;
+  border: 1px solid deeppink;
+}

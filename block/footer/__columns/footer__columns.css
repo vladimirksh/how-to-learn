@@ -1,0 +1,8 @@
+/*делаю footer__columns flex блоком что бы расположить элементы
+при помощи управления положением(justify-content: space-between;)*/
+.footer__columns {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+}

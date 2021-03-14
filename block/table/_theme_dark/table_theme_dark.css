@@ -1,0 +1,5 @@
+.table_theme_dark {
+  grid-template-columns: 200px 200px 200px 200px 200px;
+  position: relative;
+  z-index: 1;
+  }

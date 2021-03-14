@@ -1,0 +1,9 @@
+/*это отдельный блок так как его будем использовать еще не раз*/
+.table {
+  display: grid;
+  width: 1100px;
+  margin: 0 auto;
+  justify-content: space-between;
+  grid-template-columns: 250px 250px 250px 250px;
+  padding: 0;
+}

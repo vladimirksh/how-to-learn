@@ -1,0 +1,9 @@
+/*стили для грида*/
+.table__cell {
+  margin-top: 60px;
+  list-style-type: none;
+}
+/*Добавил псевдо класс так как у последнего параграфа в макете явно отсутствуют отступы*/
+.table__cell :nth-last-child(1) {
+  margin: 0;
+}

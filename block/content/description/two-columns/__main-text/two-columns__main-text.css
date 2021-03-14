@@ -1,0 +1,8 @@
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+}
+
+.two-columns__main-text :nth-last-child(1){
+  margin: 0;
+}
