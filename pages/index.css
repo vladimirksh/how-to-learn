@@ -86,6 +86,10 @@
 @import url(../block/content/kaufman/__triangle/kaufman__triangle.css);
 /*Стили для kaufman*/
 
+/*Стили для resources*/
+@import url(../block/content/resources/resources.css);
+/*Стили для resources*/
+
 /*Стили для footer*/
 @import url(../block/footer/footer.css);
 @import url(../block/footer/__columns/footer__columns.css);
