@@ -1,43 +1,5 @@
 .khan {
   background-color: #f2f2f2;
   padding-top: 105px;
-  border: 1px solid greenyellow;
-}
-.khan__container {
-  width: 80%;
-  border: 1px solid red;
-  margin: 0 auto;
-}
-.khan__author {
-  border: 1px solid blue;
-  margin: 0;
-}
-.khan__title {
-  border: 1px solid green;
-  margin: 0;
-}
-.khan__quote {
-  max-width: 790px;
-  border: 1px solid orchid;
-  margin: 50px 0 36px;
-}
-.khan__quote-author {
-  margin: 0 0 10px;
-  border: 1px solid red;
-}
-.khan__quote-author-subline {
-  margin: 0;
-  border: 1px solid lawngreen;
-}
-.khan__book-container {
-
-}
-.khan__book-pic {
-  height: 620px;
-  width: 608px;
-  object-fit: contain;
-  object-position: top 100px;
-
-}
-.khan__buy-link {
+  overflow: hidden;
 }

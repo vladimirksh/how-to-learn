@@ -64,6 +64,15 @@
 
 /*Стили для khan*/
 @import url(../block/content/khan/khan.css);
+@import url(../block/content/khan/__container/khan__container.css);
+@import url(../block/content/khan/__author/khan__author.css);
+@import url(../block/content/khan/__title/khan__title.css);
+@import url(../block/content/khan/__quote/khan__quote.css);
+@import url(../block/content/khan/__quote-author/khan__quote-author.css);
+@import url(../block/content/khan/__quote-author-subline/lhan__qoute-author-subline.css);
+@import url(../block/content/khan/__book-container/khan__book-container.css);
+@import url(../block/content/khan/__book-pic/khan__book-pic.css);
+@import url(../block/content/khan/__buy-link/khan__buy-link.css);
 /*Стили для khan*/
 
 /*Стили для kaufman*/
