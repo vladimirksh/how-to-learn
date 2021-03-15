@@ -88,6 +88,8 @@
 
 /*Стили для resources*/
 @import url(../block/content/resources/resources.css);
+@import url(../block/content/resources/__logo-zone/resources__logo-zone.css);
+@import url(../block/content/resources/__logo.css/resources__logo.css);
 /*Стили для resources*/
 
 /*Стили для footer*/
