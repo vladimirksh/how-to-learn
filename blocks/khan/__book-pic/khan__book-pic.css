@@ -1,7 +1,12 @@
 .khan__book-pic {
   height: 608px;
   width: 620px;
-  background-image: url(../../../images/images_sprint-2/khan-book.jpg);
-  background-size: 100%;
+  overflow: hidden;
   background-repeat: no-repeat;
 }
+
+/*Отступ справа для 1 ребенка*/
+.khan__book-container .khan__book-pic:first-child {
+  margin-right: 48px;
+}
+
