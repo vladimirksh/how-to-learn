@@ -3,10 +3,7 @@
   width: 620px;
   overflow: hidden;
   background-repeat: no-repeat;
-}
-
-/*Отступ справа для 1 ребенка*/
-.khan__book-container .khan__book-pic:first-child {
   margin-right: 48px;
 }
+
 
